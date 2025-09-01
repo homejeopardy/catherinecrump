@@ -1,334 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catherine Crump, UC Berkeley School of Law</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-        
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f9fafb;
-            color: #1f2937;
-        }
-        .container {
-            max-width: 1000px;
-            margin: auto;
-            padding: 2rem;
-        }
-        .section-title {
-            color: #1e40af;
-            font-weight: 700;
-            font-size: 2.25rem;
-            margin-bottom: 2rem;
-            text-align: center;
-        }
-        .card {
-            background-color: #ffffff;
-            border-radius: 12px;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-            padding: 2.5rem;
-            margin-bottom: 2rem;
-            border: 1px solid #e5e7eb;
-        }
-        .profile-photo {
-            border-radius: 9999px;
-            border: 5px solid #fff;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        }
-        .ted-logo {
-            filter: grayscale(100%);
-            transition: filter 0.3s ease;
-        }
-        .ted-logo:hover {
-            filter: grayscale(0%);
-        }
-        /* Mobile adjustments for a cleaner, more readable look */
-        @media (max-width: 640px) {
-            .container {
-                padding: 1rem;
-            }
-            .section-title {
-                font-size: 1.75rem;
-                text-align: left;
-            }
-            .card {
-                padding: 1.5rem;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Catherine Crump - UC Berkeley Law</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="antialiased">
-
-    <!-- Header & Navigation -->
-    <header class="bg-white shadow-md sticky top-0 z-50">
-        <nav class="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
-            <h1 class="text-2xl font-bold text-gray-800 mb-2 md:mb-0">Catherine Crump</h1>
-            <ul class="flex space-x-4 md:space-x-8">
-                <li><a href="#about" class="text-gray-600 hover:text-blue-700 transition-colors duration-300">About</a></li>
-                <li><a href="#research" class="text-gray-600 hover:text-blue-700 transition-colors duration-300">Research</a></li>
-                <li><a href="#publications" class="text-gray-600 hover:text-blue-700 transition-colors duration-300">Publications</a></li>
-                <li><a href="#media" class="text-gray-600 hover:text-blue-700 transition-colors duration-300">Media</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <div class="container mx-auto mt-12 px-4">
-
-        <!-- Hero Section -->
-        <section id="hero" class="text-center py-16">
-            <img src="images/face.png" alt="A professional headshot of Catherine Crump" class="profile-photo mx-auto mb-6">
-            <h2 class="text-5xl font-extrabold text-gray-900">Catherine Crump</h2>
-            <p class="mt-4 text-2xl text-gray-600 font-light">Professor, UC Berkeley School of Law</p>
-            <p class="mt-6 text-lg text-gray-500 max-w-3xl mx-auto leading-relaxed">
-                Director of the Samuelson Law, Technology & Public Policy Clinic, specializing in the impact of technology on civil liberties, privacy, and free speech. Her work focuses on legal issues related to police surveillance and government transparency.
-            </p>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="mb-12">
-            <h2 class="section-title">About</h2>
-            <div class="card">
-                <p class="text-lg leading-relaxed text-gray-700">
-                    Catherine Crump is a clinical professor and Director of the Samuelson Law, Technology & Public Policy Clinic at UC Berkeley School of Law. She is an expert on legal issues related to police surveillance technology and has litigated constitutional challenges in federal courts to protect First and Fourth Amendment rights. Her work also involves compelling the disclosure of government records under the Freedom of Information Act.
-                </p>
-                <p class="mt-6 text-lg leading-relaxed text-gray-700">
-                    Prior to her work at Berkeley Law, she was a staff attorney at the American Civil Liberties Union (ACLU) for nearly nine years, where she litigated cases on electronic surveillance and political protest rights. She also served as a Senior Policy Advisor for Criminal Justice to the White House Domestic Policy Council. She holds a J.D. from Stanford Law School and a B.A. from Stanford University.
-                </p>
-            </div>
-        </section>
-
-        <!-- Research Section -->
-        <section id="research" class="mb-12">
-            <h2 class="section-title">Research</h2>
-            <div class="card">
-                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Areas of Expertise</h3>
-                <ul class="list-disc list-inside space-y-2 text-gray-600">
-                    <li>Civil Liberties & Technology</li>
-                    <li>Privacy and Cybersecurity</li>
-                    <li>Government Surveillance</li>
-                    <li>Criminal Justice Reform</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Publications Section -->
-        <section id="publications" class="mb-12">
-            <h2 class="section-title">Publications</h2>
-            <div class="card">
-                <ul class="space-y-6 text-gray-600">
-                    <li>
-                        <p><span class="font-semibold">Reforming Policing from the White House: The Challenges of Implementing Police Reform Through Executive Order</span></p>
-                        <p class="text-sm">Crump, Catherine</p>
-                        <p class="text-sm">in <em>Research Handbook on Penal Policy</em> (Corda, Alessandro ed., 2025) Forthcoming Contribution to Book</p>
-                    </li>
-                    <li>
-                        <p><span class="font-semibold">Handout for Flash Talk — The Landscape Post-Carpenter</span></p>
-                        <p class="text-sm">Crump, Catherine</p>
-                        <p class="text-sm"><em>Unlocking the Black Box: Challenging Surveillance Tools & Technologies in Criminal Cases</em> (2022) Conference materials</p>
-                        <a href="https://www.example.com/handout.pdf" target="_blank" class="text-blue-600 hover:underline text-sm">pdf</a> | <a href="https://www.example.com/handout-link" target="_blank" class="text-blue-600 hover:underline text-sm">link</a>
-                    </li>
-                    <li>
-                        <p><span class="font-semibold">Why 72 Intellectual Property Scholars Supported Google’s Copyrightability Analysis in the Oracle Case</span></p>
-                        <p class="text-sm">Samuelson, Pamela; Crump, Catherine</p>
-                        <p class="text-sm">36 <em>Berkeley Tech. L.J.</em> 413 (2021) Article</p>
-                        <p class="text-sm">DOI: <a href="https://doi.org/10.15779/Z38R49G952" target="_blank" class="text-blue-600 hover:underline">https://doi.org/10.15779/Z38R49G952</a></p>
-                        <a href="https://www.example.com/article.pdf" target="_blank" class="text-blue-600 hover:underline text-sm">link</a>
-                    </li>
-                    <li>
-                        <p><span class="font-semibold">Stop monitoring emails between inmates and their lawyers</span></p>
-                        <p class="text-sm">Crump, Catherine; White, Ken</p>
-                        <p class="text-sm"><em>Washington Post</em> (2020-06) Popular Press</p>
-                        <a href="https://www.example.com/wp-article.html" target="_blank" class="text-blue-600 hover:underline text-sm">link</a>
-                    </li>
-                    <li>
-                        <p><span class="font-semibold">Op-Ed: Lawyers can’t visit clients in prison, so quit monitoring their emails</span></p>
-                        <p class="text-sm">Crump, Catherine; White, Ken</p>
-                        <p class="text-sm"><em>LA Times</em> (2020-06) Popular Press</p>
-                        <a href="https://www.example.com/la-times-article.pdf" target="_blank" class="text-blue-600 hover:underline text-sm">pdf</a> | <a href="https://www.example.com/la-times-article.html" target="_blank" class="text-blue-600 hover:underline text-sm">link</a>
-                    </li>
-                    <li>
-                        <p><span class="font-semibold">Tracking the Trackers: An Examination of Electronic Monitoring of Youth in Practice</span></p>
-                        <p class="text-sm">Crump, Catherine</p>
-                        <p class="text-sm">53 <em>UC Davis L. Rev.</em> 795 (2019) Article</p>
-                        <a href="https://www.example.com/uc-davis-article.html" target="_blank" class="text-blue-600 hover:underline text-sm">link</a>
-                    </li>
-                    <li>
-                        <p><span class="font-semibold">A win for digital privacy — but that’s just the tip of the government surveillance iceberg</span></p>
-                        <p class="text-sm">Crump, Catherine; Graham, Megan</p>
-                        <p class="text-sm"><em>SF Chronicle</em> (2018-07) Popular Press</p>
-                        <a href="https://www.example.com/sf-chronicle-article.html" target="_blank" class="text-blue-600 hover:underline text-sm">link</a>
-                    </li>
-                    <li>
-                        <p><span class="font-semibold">Clerkships are invaluable for young lawyers. They can also be a setup for abuse.</span></p>
-                        <p class="text-sm">Crump, Catherine</p>
-                        <p class="text-sm"><em>Washington Post</em> (2017-12) Popular Press</p>
-                        <a href="https://www.example.com/wp-clerkships.html" target="_blank" class="text-blue-600 hover:underline text-sm">link</a>
-                    </li>
-                    <li>
-                        <p><span class="font-semibold">Electronic monitoring isn’t kid-friendly</span></p>
-                        <p class="text-sm">Crump, Catherine; Weisburd, Kate; Koningisor, Christina</p>
-                        <p class="text-sm"><em>Sacramento Bee</em> (2017-07) Popular Press</p>
-                        <a href="https://www.example.com/sac-bee-article.pdf" target="_blank" class="text-blue-600 hover:underline text-sm">pdf</a>
-                    </li>
-                    <li>
-                        <p><span class="font-semibold">Privacy Protection in Online Multimedia</span></p>
-                        <p class="text-sm">Lu, Yung-Hsiang; Cavallaro, Andrea; Crump, Catherine; Friedland, Gerald; Winstein, Keith</p>
-                        <p class="text-sm">Proc. of the 25th ACM International Conference on Multimeda (ACM MM'17) 457 (2017) Article</p>
-                        <p class="text-sm">DOI: <a href="https://doi.org/10.1145/3123266.3133335" target="_blank" class="text-blue-600 hover:underline">https://doi.org/10.1145/3123266.3133335</a></p>
-                        <a href="https://www.example.com/online-multimedia.pdf" target="_blank" class="text-blue-600 hover:underline text-sm">pdf</a>
-                    </li>
-                    <li>
-                        <p><span class="font-semibold">Electronic Monitoring of Youth in the California Justice System</span></p>
-                        <p class="text-sm">Crump, Catherine; UC Berkeley, School of Law; Samuelson Law, Technology & Public Policy Clinic; East Bay Community Law Center; Koningisor, Christina; Coen, Rena; Tung, Chieh</p>
-                        <p class="text-sm">Electronic Monitoring of Youth in the California Justice System (2017) Advocacy Report</p>
-                        <a href="https://www.example.com/em-youth-report.pdf" target="_blank" class="text-blue-600 hover:underline text-sm">pdf</a>
-                    </li>
-                    <li>
-                        <p><span class="font-semibold">Surveillance Policy Making by Procurement</span></p>
-                        <p class="text-sm">Crump, Catherine</p>
-                        <p class="text-sm">91 <em>Wash. L. Rev.</em> 1595 (2016) Article</p>
-                        <a href="https://www.example.com/surveillance-policy.pdf" target="_blank" class="text-blue-600 hover:underline text-sm">pdf</a>
-                    </li>
-                    <li>
-                        <p><span class="font-semibold">No Tape, No Testimony: How Courts Can Ensure The Responsible Use of Body Cameras</span></p>
-                        <p class="text-sm">Crump, Catherine; Samuelson Law, Technology & Public Policy Clinic; ACLU of Massachusetts</p>
-                        <p class="text-sm">No Tape, No Testimony: How Courts Can Ensure The Responsible Use of Body Cameras (2016) Advocacy Report</p>
-                        <a href="https://www.example.com/no-tape.html" target="_blank" class="text-blue-600 hover:underline text-sm">link</a>
-                    </li>
-                    <li>
-                        <p><span class="font-semibold">Police Should Be Required To Dashcam Everything</span></p>
-                        <p class="text-sm"><em>Slate</em> (2016) Popular Press</p>
-                    </li>
-                    <li>
-                        <p><span class="font-semibold">It's Important for SF to Get Body-Camera Rules for Police Right</span></p>
-                        <p class="text-sm">Crump, Catherine</p>
-                        <p class="text-sm"><em>S.F. Chron.</em> (2016) Popular Press</p>
-                    </li>
-                    <li>
-                        <p><span class="font-semibold">Citizens Need More Say over Police Surveillance Technology</span></p>
-                        <p class="text-sm">Crump, Catherine</p>
-                        <p class="text-sm"><em>S.F. Chron.</em> (2016) Popular Press</p>
-                        <a href="https://www.example.com/more-say-on-surveillance.html" target="_blank" class="text-blue-600 hover:underline text-sm">link</a>
-                    </li>
-                    <li>
-                        <p><span class="font-semibold">Invasion of the Data Snatchers: Big Data and the Internet of Things Means the Surveillance of Everything</span></p>
-                        <p class="text-sm">Crump, Catherine; Harwood, Matthew</p>
-                        <p class="text-sm"><em>TomDispatch</em> (2014) Popular Press</p>
-                        <a href="https://www.example.com/data-snatchers.html" target="_blank" class="text-blue-600 hover:underline text-sm">link</a>
-                    </li>
-                    <li>
-                        <p><span class="font-semibold">A Cop May Be Following You Everywhere</span></p>
-                        <p class="text-sm">Crump, Catherine</p>
-                        <p class="text-sm"><em>CNN</em> (2014) Popular Press</p>
-                        <a href="https://www.example.com/cnn-following-you.pdf" target="_blank" class="text-blue-600 hover:underline text-sm">pdf</a> | <a href="https://www.example.com/cnn-following-you.html" target="_blank" class="text-blue-600 hover:underline text-sm">link</a>
-                    </li>
-                    <li>
-                        <p><span class="font-semibold">You Are Being Tracked: How License Plate Readers Are Being Used to Record Americans' Movements</span></p>
-                        <p class="text-sm">Crump, Catherine</p>
-                        <p class="text-sm"><em>ACLU</em> (2013) Advocacy Report</p>
-                        <a href="https://www.example.com/tracked-report.html" target="_blank" class="text-blue-600 hover:underline text-sm">link</a>
-                    </li>
-                    <li>
-                        <p><span class="font-semibold">Why Americans Are Saying No to Domestic Drones</span></p>
-                        <p class="text-sm">Crump, Catherine; Stanley, Jay</p>
-                        <p class="text-sm"><em>Slate</em> (2013) Popular Press</p>
-                        <a href="https://www.example.com/drones-slate.html" target="_blank" class="text-blue-600 hover:underline text-sm">link</a>
-                    </li>
-                    <li>
-                        <p><span class="font-semibold">The Vast, Troubling Call Database Drug Agents Use to Identify Burner Phones</span></p>
-                        <p class="text-sm">Crump, Catherine</p>
-                        <p class="text-sm"><em>Slate</em> (2013) Popular Press</p>
-                        <a href="https://www.example.com/burner-phones.html" target="_blank" class="text-blue-600 hover:underline text-sm">link</a>
-                    </li>
-                    <li>
-                        <p><span class="font-semibold">Cell Phone Companies Reveal How Often They Hand Your Data Over to Law Enforcement</span></p>
-                        <p class="text-sm">Crump, Catherine</p>
-                        <p class="text-sm"><em>Slate</em> (2013) Popular Press</p>
-                        <a href="https://www.example.com/cell-phone-data.html" target="_blank" class="text-blue-600 hover:underline text-sm">link</a>
-                    </li>
-                    <li>
-                        <p><span class="font-semibold">The Best Week for Privacy In a Long Time</span></p>
-                        <p class="text-sm">Crump, Catherine</p>
-                        <p class="text-sm"><em>CNN</em> (2013) Popular Press</p>
-                    </li>
-                    <li>
-                        <p><span class="font-semibold">The GPS Act Supports Legitimate Investigations and Protects Privacy</span></p>
-                        <p class="text-sm">Crump, Catherine</p>
-                        <p class="text-sm"><em>U.S. News & World Rep.</em> (2012) Popular Press</p>
-                        <a href="https://www.example.com/gps-act.html" target="_blank" class="text-blue-600 hover:underline text-sm">link</a>
-                    </li>
-                    <li>
-                        <p><span class="font-semibold">How GPS Tracking Threatens Our Privacy</span></p>
-                        <p class="text-sm">Crump, Catherine</p>
-                        <p class="text-sm"><em>CNN</em> (2011) Popular Press</p>
-                        <a href="https://www.example.com/gps-threatens.pdf" target="_blank" class="text-blue-600 hover:underline text-sm">pdf</a> | <a href="https://www.example.com/gps-threatens.html" target="_blank" class="text-blue-600 hover:underline text-sm">link</a>
-                    </li>
-                    <li>
-                        <p><span class="font-semibold">Protecting Privacy from Aerial Surveillance: Recommendations for Government Use of Drone Aircraft</span></p>
-                        <p class="text-sm">Crump, Catherine; Stanley, Jay</p>
-                        <p class="text-sm"><em>ACLU</em> (2011) Advocacy Report</p>
-                    </li>
-                    <li>
-                        <p><span class="font-semibold">Court Rulings Unreasonably Silence Student Speech</span></p>
-                        <p class="text-sm"><em>Knoxville News-Sentinel</em> (2010) Popular Press</p>
-                        <a href="https://www.example.com/court-rulings.pdf" target="_blank" class="text-blue-600 hover:underline text-sm">pdf</a>
-                    </li>
-                    <li>
-                        <p><span class="font-semibold">Data Retention: Privacy, Anonymity, and Accountability Online</span></p>
-                        <p class="text-sm">Crump, Catherine</p>
-                        <p class="text-sm">56 <em>Stan. L. Rev.</em> 191 (2003) Article</p>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- In the Media Section -->
-        <section id="media" class="mb-12">
-            <h2 class="section-title">In the Media</h2>
-            <div class="card">
-                <p class="text-lg leading-relaxed text-gray-700">
-                    Professor Crump is a frequent commentator and opinion writer in national news outlets, including The Washington Post and CNN. She has testified before Congress and the European Parliament.
-                </p>
-
-                <h3 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">TED Talk</h3>
-                <div class="flex items-start gap-4 flex-col md:flex-row">
-                    <a href="https://www.ted.com/talks/catherine_crump_the_small_and_surprisingly_dangerous_detail_the_police_track_about_you" target="_blank" class="flex-shrink-0">
-                        <img src="images/ted/tedlogo.png" alt="TED logo" class="ted-logo h-16 w-16 rounded-full">
-                    </a>
-                    <div class="text-left">
-                        <a href="https://www.ted.com/talks/catherine_crump_the_small_and_surprisingly_dangerous_detail_the_police_track_about_you" target="_blank" class="text-blue-600 hover:underline text-lg font-semibold">
-                            The small and surprisingly dangerous detail the police track about you
-                        </a>
-                        <p class="mt-1 text-sm text-gray-500 leading-relaxed">
-                            In her popular TEDGlobal 2014 talk, Catherine Crump reveals how a mundane-sounding technology—the automatic license plate reader—is used to create massive databases that track the movements of ordinary citizens, raising serious civil liberties concerns.
-                        </p>
-                    </div>
-                </div>
-
-                <h3 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">Selected Op-eds</h3>
-                <ul class="list-disc list-inside space-y-3 text-gray-600">
-                    <li>
-                        <span class="font-bold">The Washington Post:</span> "Governments are demanding personal data. We need to be more transparent about it."
-                    </li>
-                    <li>
-                        <span class="font-bold">CNN:</span> "How GPS tracking threatens our privacy."
-                    </li>
-                </ul>
-                <p class="mt-6 text-sm text-gray-400">
-                    This is a partial list of media appearances and citations.
-                </p>
-            </div>
-        </section>
-
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <!-- Header -->
+  <header class="bg-berkeley-blue text-white p-6 shadow-md" style="background-color:#003262;">
+    <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between">
+      <h1 class="text-2xl font-bold">Catherine Crump</h1>
+      <nav class="mt-2 sm:mt-0">
+        <a href="#about" class="mx-3 hover:underline">About</a>
+        <a href="#research" class="mx-3 hover:underline">Research</a>
+        <a href="#teaching" class="mx-3 hover:underline">Teaching</a>
+        <a href="#contact" class="mx-3 hover:underline">Contact</a>
+      </nav>
     </div>
+  </header>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-300 text-center py-8 mt-12">
-        <p>Catherine Crump | UC Berkeley School of Law</p>
-        <p class="mt-2 text-sm text-gray-500">This website is for informational purposes only and is not affiliated with UC Berkeley.</p>
-    </footer>
+  <!-- Hero -->
+  <section class="bg-white">
+    <div class="max-w-5xl mx-auto px-6 py-16 flex flex-col md:flex-row items-center">
+      <img src="https://www.law.berkeley.edu/wp-content/uploads/2020/09/catherine-crump.jpg" alt="Catherine Crump" class="w-48 h-48 object-cover rounded-full shadow-lg mb-6 md:mb-0 md:mr-10">
+      <div>
+        <h2 class="text-3xl font-bold mb-4">Professor of Law at UC Berkeley</h2>
+        <p class="text-lg leading-relaxed">
+          Catherine Crump is a Clinical Professor of Law and Director of the Samuelson Law, Technology & Public Policy Clinic at UC Berkeley School of Law. 
+          Her work focuses on the intersection of law, technology, and civil liberties.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="bg-gray-100 py-16">
+    <div class="max-w-4xl mx-auto px-6">
+      <h3 class="text-2xl font-semibold mb-4">About</h3>
+      <p class="mb-4">
+        Professor Crump teaches and litigates in areas related to technology, privacy, and government accountability. 
+        She is a nationally recognized expert on surveillance, freedom of expression, and the impact of emerging technologies on democratic institutions.
+      </p>
+      <p>
+        Before joining Berkeley Law, she was a staff attorney at the American Civil Liberties Union, where she litigated high-profile cases involving free speech and digital rights.
+      </p>
+    </div>
+  </section>
+
+  <!-- Research -->
+  <section id="research" class="bg-white py-16">
+    <div class="max-w-4xl mx-auto px-6">
+      <h3 class="text-2xl font-semibold mb-4">Research</h3>
+      <ul class="list-disc list-inside space-y-2">
+        <li>Surveillance and its impact on marginalized communities</li>
+        <li>Transparency and accountability in government use of technology</li>
+        <li>Privacy rights in the digital age</li>
+        <li>The intersection of law, democracy, and emerging technologies</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Teaching -->
+  <section id="teaching" class="bg-gray-100 py-16">
+    <div class="max-w-4xl mx-auto px-6">
+      <h3 class="text-2xl font-semibold mb-4">Teaching</h3>
+      <p class="mb-4">Professor Crump teaches courses and supervises student work in the Samuelson Law, Technology & Public Policy Clinic.</p>
+      <ul class="list-disc list-inside space-y-2">
+        <li>Law & Technology Policy</li>
+        <li>Privacy and Civil Liberties in the Digital Age</li>
+        <li>First Amendment and Emerging Technology</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-white py-16">
+    <div class="max-w-4xl mx-auto px-6">
+      <h3 class="text-2xl font-semibold mb-4">Contact</h3>
+      <p class="mb-2">📍 UC Berkeley School of Law</p>
+      <p class="mb-2">📧 <a href="mailto:catherinecrump@berkeley.edu" class="text-blue-600 hover:underline">catherinecrump@berkeley.edu</a></p>
+      <p>🔗 <a href="https://www.law.berkeley.edu/our-faculty/faculty-profiles/catherine-crump/" target="_blank" class="text-blue-600 hover:underline">Faculty Profile</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-berkeley-blue text-white text-center py-6 mt-8" style="background-color:#003262;">
+    <p>&copy; <span id="year"></span> Catherine Crump | UC Berkeley School of Law</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
