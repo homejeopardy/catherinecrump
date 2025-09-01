@@ -6,10 +6,12 @@
     <title>Catherine Crump, UC Berkeley School of Law</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f0f4f8;
-            color: #334155;
+            background-color: #f9fafb;
+            color: #1f2937;
         }
         .container {
             max-width: 1000px;
@@ -17,119 +19,143 @@
             padding: 2rem;
         }
         .section-title {
-            color: #1e3a8a;
+            color: #1e40af;
             font-weight: 700;
-            border-bottom: 2px solid #3b82f6;
-            padding-bottom: 0.5rem;
-            margin-bottom: 1.5rem;
+            font-size: 2.25rem;
+            margin-bottom: 2rem;
+            text-align: center;
         }
         .card {
             background-color: #ffffff;
             border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            padding: 2rem;
-            margin-bottom: 1.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            border: 1px solid #e5e7eb;
         }
-        .card h3 {
-            color: #1e3a8a;
-        }
-        .card p, .card ul, .card li {
-            color: #4b5563;
-        }
-        .btn {
-            background-color: #3b82f6;
-            color: #ffffff;
-            padding: 0.75rem 1.5rem;
+        .profile-photo {
             border-radius: 9999px;
-            font-weight: 600;
-            transition: background-color 0.3s ease;
+            border: 5px solid #fff;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
-        .btn:hover {
-            background-color: #2563eb;
+        .ted-logo {
+            filter: grayscale(100%);
+            transition: filter 0.3s ease;
         }
-        .media-item {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            margin-bottom: 1rem;
+        .ted-logo:hover {
+            filter: grayscale(0%);
+        }
+        /* Mobile adjustments for a cleaner, more readable look */
+        @media (max-width: 640px) {
+            .container {
+                padding: 1rem;
+            }
+            .section-title {
+                font-size: 1.75rem;
+                text-align: left;
+            }
+            .card {
+                padding: 1.5rem;
+            }
         }
     </style>
 </head>
 <body class="antialiased">
 
     <!-- Header & Navigation -->
-    <header class="bg-white shadow-sm sticky top-0 z-50">
-        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <h1 class="text-2xl font-bold text-gray-800">Catherine Crump</h1>
-            <ul class="flex space-x-4">
-                <li><a href="#about" class="text-gray-600 hover:text-blue-500 transition-colors duration-300">About</a></li>
-                <li><a href="#research" class="text-gray-600 hover:text-blue-500 transition-colors duration-300">Research & Publications</a></li>
-                <li><a href="#media" class="text-gray-600 hover:text-blue-500 transition-colors duration-300">In the Media</a></li>
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
+            <h1 class="text-2xl font-bold text-gray-800 mb-2 md:mb-0">Catherine Crump</h1>
+            <ul class="flex space-x-4 md:space-x-8">
+                <li><a href="#about" class="text-gray-600 hover:text-blue-700 transition-colors duration-300">About</a></li>
+                <li><a href="#research" class="text-gray-600 hover:text-blue-700 transition-colors duration-300">Research</a></li>
+                <li><a href="#media" class="text-gray-600 hover:text-blue-700 transition-colors duration-300">Media</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="container mx-auto mt-8 px-4">
+    <div class="container mx-auto mt-12 px-4">
 
         <!-- Hero Section -->
-        <section id="hero" class="text-center py-16 bg-white rounded-xl shadow-lg mb-8">
-            <h2 class="text-4xl font-extrabold text-blue-800">Catherine Crump</h2>
-            <p class="mt-2 text-xl text-gray-700">Professor, UC Berkeley School of Law</p>
-            <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-                Director of the Samuelson Law, Technology & Public Policy Clinic, specializing in the impact of technology on civil liberties, privacy, and free speech.
+        <section id="hero" class="text-center py-16">
+            <img src="images/headshots/face.png" alt="A professional headshot of Catherine Crump" class="profile-photo mx-auto mb-6">
+            <h2 class="text-5xl font-extrabold text-gray-900">Catherine Crump</h2>
+            <p class="mt-4 text-2xl text-gray-600 font-light">Professor, UC Berkeley School of Law</p>
+            <p class="mt-6 text-lg text-gray-500 max-w-3xl mx-auto leading-relaxed">
+                Director of the Samuelson Law, Technology & Public Policy Clinic, specializing in the impact of technology on civil liberties, privacy, and free speech. Her work focuses on legal issues related to police surveillance and government transparency.
             </p>
         </section>
 
         <!-- About Section -->
-        <section id="about" class="mb-8">
-            <h2 class="text-3xl section-title">About</h2>
+        <section id="about" class="mb-12">
+            <h2 class="section-title">About</h2>
             <div class="card">
-                <p>
+                <p class="text-lg leading-relaxed text-gray-700">
                     Catherine Crump is a clinical professor and Director of the Samuelson Law, Technology & Public Policy Clinic at UC Berkeley School of Law. She is an expert on legal issues related to police surveillance technology and has litigated constitutional challenges in federal courts to protect First and Fourth Amendment rights. Her work also involves compelling the disclosure of government records under the Freedom of Information Act.
                 </p>
-                <p class="mt-4">
+                <p class="mt-6 text-lg leading-relaxed text-gray-700">
                     Prior to her work at Berkeley Law, she was a staff attorney at the American Civil Liberties Union (ACLU) for nearly nine years, where she litigated cases on electronic surveillance and political protest rights. She also served as a Senior Policy Advisor for Criminal Justice to the White House Domestic Policy Council. She holds a J.D. from Stanford Law School and a B.A. from Stanford University.
                 </p>
             </div>
         </section>
 
         <!-- Research & Publications Section -->
-        <section id="research" class="mb-8">
-            <h2 class="text-3xl section-title">Research & Publications</h2>
+        <section id="research" class="mb-12">
+            <h2 class="section-title">Research & Publications</h2>
             <div class="card">
-                <h3 class="text-2xl font-semibold mb-2">Areas of Expertise</h3>
-                <ul class="list-disc list-inside space-y-1">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Areas of Expertise</h3>
+                <ul class="list-disc list-inside space-y-2 text-gray-600">
                     <li>Civil Liberties & Technology</li>
                     <li>Privacy and Cybersecurity</li>
                     <li>Government Surveillance</li>
                     <li>Criminal Justice Reform</li>
                 </ul>
 
-                <h3 class="text-2xl font-semibold mt-6 mb-2">Key Publications</h3>
-                <ul class="list-disc list-inside space-y-2">
+                <h3 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">Key Publications</h3>
+                <ul class="list-disc list-inside space-y-3 text-gray-600">
                     <li>"Surveillance Policy Making By Procurement," 91 Wash. L. Rev. 1595 (2016)</li>
                     <li>"Tracking the Trackers: An Examination of Electronic Monitoring of Youth in Practice," 53 UC Davis L. Rev. 795 (2019)</li>
                     <li>"Why 72 Intellectual Property Scholars Supported Google's Copyrightability Analysis in the Oracle Case," 36 Berkeley Tech. L.J. 413 (2021)</li>
                 </ul>
-                <p class="mt-4 text-sm text-gray-500">
+                <p class="mt-6 text-sm text-gray-400">
                     This is a partial list. For a full list of scholarly works and advocacy reports, please consult her official CV.
                 </p>
             </div>
         </section>
 
         <!-- In the Media Section -->
-        <section id="media" class="mb-8">
-            <h2 class="text-3xl section-title">In the Media</h2>
+        <section id="media" class="mb-12">
+            <h2 class="section-title">In the Media</h2>
             <div class="card">
-                <p>
+                <p class="text-lg leading-relaxed text-gray-700">
                     Professor Crump is a frequent commentator and opinion writer in national news outlets, including The Washington Post and CNN. She has testified before Congress and the European Parliament.
                 </p>
-                <h3 class="text-2xl font-semibold mt-6 mb-2">Selected Media Appearances</h3>
-                <div class="media-item">
-                    <span class="text-gray-500">TEDGlobal 2014 Talk:</span>
-                    <a href="https://www.ted.com/speakers/catherine_crump" class="text-blue-600 hover:underline">"A TED Fellow on how law enforcement follows your movements"</a>
+
+                <h3 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">TED Talk</h3>
+                <div class="flex items-start gap-4 flex-col md:flex-row">
+                    <a href="https://www.ted.com/talks/catherine_crump_the_small_and_surprisingly_dangerous_detail_the_police_track_about_you" target="_blank" class="flex-shrink-0">
+                        <img src="images/ted/tedlogo.png" alt="TED logo" class="ted-logo h-16 w-16 rounded-full">
+                    </a>
+                    <div class="text-left">
+                        <a href="https://www.ted.com/talks/catherine_crump_the_small_and_surprisingly_dangerous_detail_the_police_track_about_you" target="_blank" class="text-blue-600 hover:underline text-lg font-semibold">
+                            The small and surprisingly dangerous detail the police track about you
+                        </a>
+                        <p class="mt-1 text-sm text-gray-500 leading-relaxed">
+                            In her popular TEDGlobal 2014 talk, Catherine Crump reveals how a mundane-sounding technology—the automatic license plate reader—is used to create massive databases that track the movements of ordinary citizens, raising serious civil liberties concerns.
+                        </p>
+                    </div>
                 </div>
-                <p class="text-sm text-gray-500">
+
+                <h3 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">Selected Op-eds</h3>
+                <ul class="list-disc list-inside space-y-3 text-gray-600">
+                    <li>
+                        <span class="font-bold">The Washington Post:</span> "Governments are demanding personal data. We need to be more transparent about it."
+                    </li>
+                    <li>
+                        <span class="font-bold">CNN:</span> "How GPS tracking threatens our privacy."
+                    </li>
+                </ul>
+                <p class="mt-6 text-sm text-gray-400">
                     This is a partial list of media appearances and citations.
                 </p>
             </div>
@@ -138,9 +164,9 @@
     </div>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white text-center py-6 mt-8">
+    <footer class="bg-gray-900 text-gray-300 text-center py-8 mt-12">
         <p>Catherine Crump | UC Berkeley School of Law</p>
-        <p class="mt-2 text-sm text-gray-400">This website is for informational purposes only and is not affiliated with UC Berkeley.</p>
+        <p class="mt-2 text-sm text-gray-500">This website is for informational purposes only and is not affiliated with UC Berkeley.</p>
     </footer>
 </body>
 </html>
